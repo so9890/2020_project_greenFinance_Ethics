@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage[left=2cm, right=2.5cm, top=3cm, bottom =3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{listings}
+
+%\usepackage[english]{babel}
+\renewcommand{\figurename}{\textbf{Fig.}}
+\renewcommand{\hat}{\widehat}
+\usepackage[bf]{caption}
+%\usepackage{graphicx} %remove demo for real images! 
+\definecolor{mariam:p}{RGB}{0,130,90}
+\definecolor{sonja}{cmyk}{0.9,0,0.3,0}
+\usepackage{amssymb}
+\newcommand{\ar}{$\Rightarrow$ \ }
+\newcommand{\dif}{$\Delta$ \ }
+\newcommand{\ia}{\item[\ar]}
+\newcommand{\ph}{\hat{\bar{\pi}}}
+\newcommand{\smt}{\sum^T_{t=1}}
+\usepackage{scalerel,stackengine}
+\stackMath
+\newcommand\reallywidehat[1]{%
+\savestack{\tmpbox}{\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{\ensuremath{#1}}]{\kern-.6pt\bigwedge\kern-.6pt}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\textheight}% 
+}{0.5ex}}%
+\stackon[1pt]{#1}{\tmpbox}%
+}
+
+%\usepackage{biblatex}
+%\addbibresource{bib.bib}
+
+\title{Literature Overview: Green Finance and Ethics}
+\author{Sonja Dobkowitz}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Green Finance}
+\begin{itemize}
+	\item 
+\end{itemize}
+\section{Ethics}
+\section{Combined}
+	%------------------------
+	% References
+	%------------------------
+	
+	\newpage
+	\pagenumbering{Roman}
+	%\printbibliography
+	\bibliography{bib}
+	\bibliographystyle{apa}
+	%-----------------------------
+	
+\end{document}
