@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage[left=2cm, right=2.5cm, top=3cm, bottom =3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{listings}
+%\usepackage[english]{babel}
+\renewcommand{\figurename}{\textbf{Fig.}}
+\renewcommand{\hat}{\widehat}
+\usepackage[bf]{caption}
+\usepackage{tikz}
+%\usepackage{graphicx} %remove demo for real images! 
+
+\definecolor{sonja}{cmyk}{0.9,0,0.3,0}
+\definecolor{hum}{cmyk}{1,0,1.8,0.3}
+\definecolor{env}{cmyk}{0,0.8,1.8,0}
+\definecolor{ani}{cmyk}{0,1,1,0}
+\definecolor{econ}{cmyk}{1,0.6,0,0.2}
+\definecolor{phil}{cmyk}{1,0,0.8,0.2}
+\usepackage{amssymb}
+\newcommand{\ar}{$\Rightarrow$ \ }
+\newcommand{\dif}{$\Delta$ \ }
+\newcommand{\ia}{\item[\ar]}
+\newcommand{\ph}{\hat{\bar{\pi}}}
+\newcommand{\smt}{\sum^T_{t=1}}
+\newcommand{\env}{\textcolor{env}}
+\newcommand{\hum}{\textcolor{hum}}
+\newcommand{\ani}{\textcolor{ani}}
+\newcommand{\sonja}{\textcolor{sonja}}
+
+\usepackage{scalerel,stackengine}
+\stackMath
+\newcommand\reallywidehat[1]{%
+\savestack{\tmpbox}{\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{\ensuremath{#1}}]{\kern-.6pt\bigwedge\kern-.6pt}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\textheight}% 
+}{0.5ex}}%
+\stackon[1pt]{#1}{\tmpbox}%
+}
+
+\tikzset{
+	econ/.style = { align=left,
+		color= econ},
+	phil/.style     = {align=left ,color=phil},
+%	env/.style      = {treenode, font=\ttfamily\normalsize},
+%	dummy/.style    = {circle,draw}
+}
+%\usepackage{biblatex}
+%\addbibresource{bib.bib}
+
+\title{Exposé Green finance and values}
+\author{Sonja Dobkowitz}
+\date{\today}
+
+\usetikzlibrary{shapes.geometric}
+\begin{document}
+\maketitle
+\section{Thema/ Das Problem: Ausgangspunkt der Arbeit}
+\section{Forschungsstand: Wo sind Lücken}
+\section{Fragestellung}
+\section{Hypothese/Zeil: Was soll erreicht oder widerlegt werden}
+\section{Theoriebezug}
+\section{Methode}
+\section{Material/ Quellen/ Daten: Wo zu finden? Wie zu beschaffen?}
+\section{Vorläufige Gliederung}
+\section{Zeitplan}
+\end{document}
